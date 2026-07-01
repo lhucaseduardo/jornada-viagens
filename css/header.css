@@ -6,6 +6,7 @@ header {
     padding: 37px 24px;
     height: 138px;
     background-color: var(--background-tertiary-color);
+    position: relative;
 }
 
 .logo {
@@ -16,8 +17,27 @@ header {
 
 input[type="checkbox"]:checked ~ nav {
     display: block;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    padding: 0 24px;
+    background-color: var(--background-tertiary-color);
 }
 
 nav {
     display: none;
+}
+
+.list-links {
+    list-style: none;
+}
+
+.list-links li {
+    margin: 16px 0;
+}
+
+.list-links li a {
+    text-decoration: none;
+    color: var(--text-secondary-color);
 }
