@@ -41,3 +41,24 @@ nav {
     text-decoration: none;
     color: var(--text-secondary-color);
 }
+
+@media screen and (min-width: 768px) {
+
+    .navigation-menu {
+        width: 100%;
+    }
+
+    .navigation-menu label {
+        display: none;
+    }
+
+    .navigation-menu nav {
+        display: block;
+    }
+
+    .navigation-menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
